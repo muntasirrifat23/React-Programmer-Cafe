@@ -1,0 +1,20 @@
+.header-name{
+    color: black;
+}
+.header{
+    background-color: rgb(131, 151, 197);
+    margin: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    justify-content: space-between;
+    display: flex;
+
+}
+.header-link a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.header-link{
+    margin-top: 30px;
+}
