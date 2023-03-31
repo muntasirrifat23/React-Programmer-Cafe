@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from 'react';
-
+import './Product.css'
+import Detail from '../Detail/Detail';
 const Product = () => {
-    const[product, setProduct]= useState([]);
+    const[products, setProduct]= useState([]);
     useEffect(()=>{
-        fetch('')
+        fetch('products.json')
+        .then(res=> res.json())
+        .then(data=>setProduct(data))
     }, [])
+    // fetch('products.json')
+
     return (
-        <div>
-            <div>
-
+        <div className='product-container'>
+            <div className='data-container'>  
+                {
+                    products.map(product=><Detail product={product}></Detail>)
+                }
+                
             </div>
-
+           
             <div>
-
+                <p>another</p>
             </div>
         </div>
     );
