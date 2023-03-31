@@ -17,6 +17,7 @@
 .ndate{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0px;
 
 }
 .name{
@@ -28,8 +29,27 @@
     margin-top: 0;
     margin-left: 10px;
     color: rgb(95, 88, 88);
+    height: auto;
 }
-
+.read{
+    margin-bottom: 0
+}
 .r{
     margin-bottom: 0;
+}
+.title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.position{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.middle{
+    margin-bottom: 0px;
+}
+.mark{
+    text-decoration: underline;
+    color: blue;
+    border: 0;
 }
