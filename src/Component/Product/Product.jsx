@@ -3,32 +3,43 @@ import './Product.css'
 import Detail from '../Detail/Detail';
 const Product = () => {
     const[products, setProduct]= useState([]);
+    const[marks, setMarks]= useState([]);
+
     useEffect(()=>{
         fetch('products.json')
         .then(res=> res.json())
         .then(data=>setProduct(data))
     }, [])
-    // fetch('products.json')
 
+    // Marks As 
+    const handleToAddMarks = (product)=>{
+        // console.log(product);
+        const newMark = [...marks, product];
+        setMarks(newMark)
+    }
+    
     return (
         <div className='product-container'>
             <div className='data-container'>  
                 {
                     products.map(product=><Detail product={product}
                     key={product.id}
+                    handleToAddMarks={handleToAddMarks}
                     >                   
                     </Detail>)
                 }
                 
             </div>
            
+            <div className='blogs-container'>
             <div>
-            <h3 className='spent'>
+              <h3 className='spent'>
                 Spent time on read:
-            </h3>   
-            <div className='bookmarked'>
-                <h3>Bookmarked Blogs: 0</h3>
-                </div>         
+              </h3> 
+            </div>  
+            <div>
+                <h3 className='mark'>Bookmarked Blogs: {marks.length}</h3>
+            </div>         
             </div>
         </div>
     );

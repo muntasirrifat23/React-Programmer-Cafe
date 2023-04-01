@@ -1,7 +1,7 @@
 import React from 'react';
-import './Blogs.css'
-const Blogs = (props) => {
-    const blog= 
+import './Marks.css'
+
+const Marks = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const Blogs = (props) => {
     );
 };
 
-export default Blogs;
+export default Marks;
