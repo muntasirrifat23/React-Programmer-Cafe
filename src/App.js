@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Component/Footer/Footer';
 import Header from './Component/Header/Header';
 import Product from './Component/Product/Product';
  import { ToastContainer } from 'react-toastify';
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <Header></Header> <hr className="hr-style" />
         <Product></Product>
+        <Footer></Footer>
       </header>
     </div>
   );

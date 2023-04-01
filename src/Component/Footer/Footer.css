@@ -1,0 +1,14 @@
+.footer{
+    color: black;
+    margin-left: 30px;
+}
+.qsn1{
+    background-color: pink;
+    padding: 12px;
+    border-radius: 10px;
+}
+.qsn2{
+    background-color: rgb(164, 198, 128);
+    padding: 12px;
+    border-radius: 10px;
+}
