@@ -1,6 +1,7 @@
 .footer{
     color: black;
     margin-left: 30px;
+    margin-right: 30px;
 }
 .qsn1{
     background-color: pink;
@@ -8,7 +9,17 @@
     border-radius: 10px;
 }
 .qsn2{
-    background-color: rgb(164, 198, 128);
+    background-color: rgb(165, 213, 114);
+    padding: 12px;
+    border-radius: 10px;
+}
+.qsn3{
+    background-color: rgb(219, 193, 96);
+    padding: 12px;
+    border-radius: 10px;
+}
+.qsn4{
+    background-color: rgb(196, 140, 219);
     padding: 12px;
     border-radius: 10px;
 }

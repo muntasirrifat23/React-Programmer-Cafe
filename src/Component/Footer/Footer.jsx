@@ -14,8 +14,15 @@ const Footer = () => {
             </p>
             
 
-            <p><h3></h3></p>
-            <p><h3></h3></p>
+            <p className='qsn3'>
+                <h3>What to do useEffect without data load?</h3>
+                Ans: useEffect hook in React is used to perform side effects in function components. Also useEffect do to perform actions such as tracking changes in state variables, running cleanup code or performing actions once when the component is mounted.
+            </p>
+
+            <p className='qsn4'>
+                <h3>How does React work?</h3>
+                Ans: React is a JavaScript library that is used to build user interfaces. If a React application is loaded in web browser at the first thing that happens is that the root component is rendered into the DOM. The root component is responsible for rendering all of the child components that make up the application.
+            </p>
         </div>
     );
 };
