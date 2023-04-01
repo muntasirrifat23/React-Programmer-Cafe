@@ -15,3 +15,17 @@
     padding: 10px;
     margin-bottom: 50px;
 }
+.spent{
+    background-color: rgb(174, 179, 179);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(45, 26, 220);
+    color: rgb(20, 27, 119);
+
+}
+.bookmarked{
+    background-color: rgb(174, 179, 179);
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}

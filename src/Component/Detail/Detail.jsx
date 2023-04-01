@@ -1,6 +1,7 @@
 import React from 'react';
 import './Detail.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// import { faBookmark } from '@fortawesome/react-font-awesome';
 
 const Detail = (props) => {
     console.log(props)
@@ -13,14 +14,20 @@ const Detail = (props) => {
             <div className='middle'>
             <div className='ndate'>
                 <p className='profile'><img src={profile} alt="" /></p>
+                
               <div className='r'>
                 <h5 className='name'>{name}</h5> 
                 <h6 className='date'>{date}</h6>
               </div>
             </div>
             <div>
-                <h6 className='read'>{read} read</h6>
-                <button>iohuhjjo</button>
+                <h6 className='read'>{read}
+                <button> iohuhjjo
+                {/* <FontAwesomeIcon icon={faBookmark} /> */}
+               
+                </button>
+                </h6>
+               
             </div>   
             </div>
             {/* Title */}

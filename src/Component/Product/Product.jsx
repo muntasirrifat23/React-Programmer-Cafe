@@ -14,13 +14,21 @@ const Product = () => {
         <div className='product-container'>
             <div className='data-container'>  
                 {
-                    products.map(product=><Detail product={product}></Detail>)
+                    products.map(product=><Detail product={product}
+                    key={product.id}
+                    >                   
+                    </Detail>)
                 }
                 
             </div>
            
             <div>
-                <p>another</p>
+            <h3 className='spent'>
+                Spent time on read:
+            </h3>   
+            <div className='bookmarked'>
+                <h3>Bookmarked Blogs: 0</h3>
+                </div>         
             </div>
         </div>
     );
