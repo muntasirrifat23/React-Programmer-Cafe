@@ -16,6 +16,7 @@ const Detail = (props) => {
     // Mark As:
     const handleToAddMarks= props.handleToAddMarks;
 
+    
 
     // Toast
     const notify = () => {
@@ -45,7 +46,7 @@ const Detail = (props) => {
               </div>
             </div>
             <div>
-                <h6 className='read'>{read}
+                <h6 className='read'>{read} min read
 
                 <button onClick={notify} className='toast'>
                 <button className='iconB' onClick={()=>handleToAddRead(props.product)}> 

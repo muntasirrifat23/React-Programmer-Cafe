@@ -30,10 +30,11 @@ const Product = () => {
         setReads(newRead);
         
     }
-//    let read=0;
-//    for(const product of marks){
-//     read=read+ product.read
-//    }
+    // let read=0;
+    // for(const reads of read){
+    //  read=read+ read.read;
+    // }
+    
     return (
         <div className='product-container'>
             <div className='data-container'>  
@@ -44,23 +45,28 @@ const Product = () => {
                     handleToAddRead={handleToAddRead}
                     >                   
                     </Detail>)
-                }
-                
+                }               
             </div>
-           
+
+
+
+           {/* Another */}
             <div className='blogs-container'>
-                {/* let reads=0;
-                for(const product of mark){
-                    reads = reads + products.read
-                } */}
+            
             <div>
               <h3 className='spent'>
-                Spent time on read: {reads.length}
+                Spent time on read: 
+                {
+                    reads.map(read=><p>{read.read} min read</p>)
+                }
               </h3> 
             </div>  
-            <div>
-                <h3 className='mark'>Bookmarked Blogs: {marks.title}</h3>
-                {/* <h5>{marks.title}</h5> */}
+            <div  className='mark'>
+                <h3>Bookmarked Blogs: {marks.length}</h3>
+                
+                {
+                    marks.map(mark=><h4 className='titleStyle'>{mark.title}</h4>)
+                }
             </div>         
             </div>
         </div>

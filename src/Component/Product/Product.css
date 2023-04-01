@@ -38,3 +38,8 @@
 .toast{
     border: 0;
 }
+.titleStyle{
+    background-color: rgb(176, 229, 233);
+    padding: 8px;
+    border-radius: 8px;
+}
