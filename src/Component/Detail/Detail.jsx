@@ -3,7 +3,8 @@ import './Detail.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Detail = (props) => {
@@ -14,6 +15,20 @@ const Detail = (props) => {
 
     // Mark As:
     const handleToAddMarks= props.handleToAddMarks;
+
+
+    // Toast
+    const notify = () => {
+      if(handleToAddRead<=0){
+        toast.error("none")
+
+      }
+      else{
+        toast("Already Added");
+      }
+    
+    }
+
 
     return (
         <div className='data'>
@@ -32,10 +47,14 @@ const Detail = (props) => {
             <div>
                 <h6 className='read'>{read}
 
+                <button onClick={notify} className='toast'>
                 <button className='iconB' onClick={()=>handleToAddRead(props.product)}> 
                           <FontAwesomeIcon icon={faBookmark} />
                
                 </button>
+                </button>
+                <ToastContainer />
+
                 </h6>
                
             </div>   

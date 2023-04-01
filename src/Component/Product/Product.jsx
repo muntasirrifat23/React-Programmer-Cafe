@@ -3,7 +3,11 @@ import './Product.css'
 import Detail from '../Detail/Detail';
 const Product = () => {
     const[products, setProduct]= useState([]);
+
+    // Mark
     const[marks, setMarks]= useState([]);
+
+    // Read
     const[reads, setReads]= useState([]);
 
     useEffect(()=>{
@@ -24,6 +28,7 @@ const Product = () => {
         // console.log(product);
         const newRead = [...reads, product];
         setReads(newRead);
+        
     }
 //    let read=0;
 //    for(const product of marks){
@@ -54,8 +59,8 @@ const Product = () => {
               </h3> 
             </div>  
             <div>
-                <h3 className='mark'>Bookmarked Blogs: {marks.length}</h3>
-                <h5>{marks.title}</h5>
+                <h3 className='mark'>Bookmarked Blogs: {marks.title}</h3>
+                {/* <h5>{marks.title}</h5> */}
             </div>         
             </div>
         </div>
