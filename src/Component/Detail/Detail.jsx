@@ -1,9 +1,10 @@
 import React from 'react';
 import './Detail.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-// import { faBookmark } from '@fortawesome/react-font-awesome';
+
 
 const Detail = (props) => {
     const{img, name,profile, date,read,title,description}= props.product;
@@ -30,8 +31,9 @@ const Detail = (props) => {
             </div>
             <div>
                 <h6 className='read'>{read}
-                <button  onClick={()=>handleToAddRead(props.product)}> iohuhjjo
-                {/* <FontAwesomeIcon icon={faBookmark} /> */}
+
+                <button className='iconB' onClick={()=>handleToAddRead(props.product)}> 
+                          <FontAwesomeIcon icon={faBookmark} />
                
                 </button>
                 </h6>
@@ -47,6 +49,8 @@ const Detail = (props) => {
             {/* Button */}
             <button className='markAs' onClick={()=>handleToAddMarks(props.product)}>Mark as read</button>
             </div>
+            
+
             </div>
         
     );

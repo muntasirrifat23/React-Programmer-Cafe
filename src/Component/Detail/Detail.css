@@ -32,7 +32,12 @@
     height: auto;
 }
 .read{
-    margin-bottom: 0
+    margin-bottom: 0;
+    margin-right:5px;
+}
+.iconB{
+    border: 0;
+    margin-left: 5px;
 }
 .r{
     margin-bottom: 0;
