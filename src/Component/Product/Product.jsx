@@ -4,6 +4,7 @@ import Detail from '../Detail/Detail';
 const Product = () => {
     const[products, setProduct]= useState([]);
     const[marks, setMarks]= useState([]);
+    const[reads, setReads]= useState([]);
 
     useEffect(()=>{
         fetch('products.json')
@@ -15,9 +16,19 @@ const Product = () => {
     const handleToAddMarks = (product)=>{
         // console.log(product);
         const newMark = [...marks, product];
-        setMarks(newMark)
+        setMarks(newMark);
     }
-    
+
+    // Read
+    const handleToAddRead = (product)=>{
+        // console.log(product);
+        const newRead = [...reads, product];
+        setReads(newRead);
+    }
+//    let read=0;
+//    for(const product of marks){
+//     read=read+ product.read
+//    }
     return (
         <div className='product-container'>
             <div className='data-container'>  
@@ -25,6 +36,7 @@ const Product = () => {
                     products.map(product=><Detail product={product}
                     key={product.id}
                     handleToAddMarks={handleToAddMarks}
+                    handleToAddRead={handleToAddRead}
                     >                   
                     </Detail>)
                 }
@@ -32,13 +44,18 @@ const Product = () => {
             </div>
            
             <div className='blogs-container'>
+                {/* let reads=0;
+                for(const product of mark){
+                    reads = reads + products.read
+                } */}
             <div>
               <h3 className='spent'>
-                Spent time on read:
+                Spent time on read: {reads.length}
               </h3> 
             </div>  
             <div>
                 <h3 className='mark'>Bookmarked Blogs: {marks.length}</h3>
+                <h5>{marks.title}</h5>
             </div>         
             </div>
         </div>
